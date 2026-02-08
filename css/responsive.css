@@ -1,0 +1,215 @@
+/* Адаптивные стили для проекта "ОдинДома" */
+
+/* Большие планшеты и маленькие десктопы */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 40px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .booking-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .camp-card {
+        grid-template-columns: 250px 1fr auto;
+    }
+}
+
+/* Планшеты */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 0;
+    }
+    
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .header-phone {
+        order: 2;
+    }
+    
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .section-subtitle {
+        font-size: 16px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .steps-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .camp-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .camp-image {
+        height: 200px;
+    }
+    
+    .camp-actions {
+        align-items: stretch;
+    }
+    
+    .camp-actions .btn {
+        width: 100%;
+    }
+    
+    .map-container {
+        min-height: 400px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .search-form {
+        padding: 20px;
+    }
+    
+    .btn-search {
+        width: 100%;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .step-card {
+        padding: 20px;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .promotions-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .subscribe-form .form-group {
+        flex-direction: column;
+    }
+    
+    .subscribe-form input,
+    .subscribe-form button {
+        width: 100%;
+    }
+    
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .search-filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .camp-summary {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .summary-price {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .house-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-brand,
+    .footer-nav,
+    .footer-services,
+    .footer-contact {
+        margin-bottom: 30px;
+    }
+}
+
+/* Очень маленькие устройства */
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 24px;
+    }
+    
+    .logo span {
+        font-size: 20px;
+    }
+    
+    .camp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .camp-select {
+        justify-content: center;
+    }
+}

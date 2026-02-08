@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОдинДома - Комфортная самоизоляция</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="Логотип ОдинДома" width="40" height="40">
+                    <span>ОдинДома</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#promotions">Акции</a></li>
+                    <li><a href="#search-form">Поиск</a></li>
+                    <li><a href="booking.html">Управление бронированием</a></li>
+                </ul>
+                
+                <div class="header-phone">
+                    <a href="tel:88001001010">8 (800) 100-10-10</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Комфортная самоизоляция в уютных домах</h1>
+                <p class="hero-subtitle">Комфортно для Вас – безопасно для общества</p>
+                <form class="search-form" id="search-form" action="search.html" method="GET">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="region">Регион</label>
+                            <select id="region" name="region" required>
+                                <option value="" disabled selected>Выберите регион</option>
+                                <option value="moscow">Московская область</option>
+                                <option value="leningrad">Ленинградская область</option>
+                                <option value="krasnodar">Краснодарский край</option>
+                                <option value="altai">Алтайский край</option>
+                                <option value="crimea">Крым</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkin">Дата заселения</label>
+                            <input type="date" id="checkin" name="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Дата выселения</label>
+                            <input type="date" id="checkout" name="checkout" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Количество человек</label>
+                            <select id="guests" name="guests" required>
+                                <option value="1">1 человек</option>
+                                <option value="2" selected>2 человека</option>
+                                <option value="3">3 человека</option>
+                                <option value="4">4 человека</option>
+                                <option value="5">5 человек</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-search">
+                        Найти кемпинг
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="steps-section">
+        <div class="container">
+            <h2 class="section-title">Как забронировать дом для самоизоляции</h2>
+            <p class="section-subtitle">Всего 6 простых шагов до комфортного отдыха</p>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <img src="img/calendar.png" alt="Шаг 1" width="50" height="50">
+                    </div>
+                    <h3 class="step-title">1. Выберите даты и место</h3>
+                    <p class="step-description">Укажите желаемые даты заселения и регион</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <img src="img/people.png" alt="Шаг 2" width="50" height="50">
+                    </div>
+                    <h3 class="step-title">2. Укажите количество гостей</h3>
+                    <p class="step-description">От 1 до 5 человек включительно</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <img src="img/camping.png" alt="Шаг 3" width="50" height="50">
+                    </div>
+                    <h3 class="step-title">3. Выберите кемпинг</h3>
+                    <p class="step-description">Подходящий по расположению и датам</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <img src="img/logo.png" alt="Шаг 4" width="50" height="50">
+                    </div>
+                    <h3 class="step-title">4. Выберите дом</h3>
+                    <p class="step-description">На территории выбранного кемпинга</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <img src="img/plus.png" alt="Шаг 5" width="50" height="50">
+                    </div>
+                    <h3 class="step-title">5. Дополнительные услуги</h3>
+                    <p class="step-description">Питание, медицина, курьер и другие услуги</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <img src="img/check.png" alt="Шаг 6" width="50" height="50">
+                    </div>
+                    <h3 class="step-title">6. Оформите заказ</h3>
+                    <p class="step-description">Заполните данные и подтвердите бронь</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">О компании "ОдинДома"</h2>
+            
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <span>🎯</span>
+                    </div>
+                    <h3>Наша цель</h3>
+                    <p>Сделать дни вынужденной самоизоляции максимально комфортными и безопасными для наших клиентов.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="about-icon">
+                        <span>💬</span>
+                    </div>
+                    <h3>Наш девиз</h3>
+                    <p>"Комфортно для Вас – безопасно для общества"</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="about-icon">
+                        <span>❤️</span>
+                    </div>
+                    <h3>Наши ценности</h3>
+                    <p>Безопасность, комфорт, забота о здоровье клиентов и их близких.</p>
+                </div>
+            </div>
+            
+            <div class="reviews">
+                <h3 class="reviews-title">Отзывы наших клиентов</h3>
+                
+                <div class="reviews-slider">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <span>👤</span>
+                            </div>
+                            <div class="review-author">
+                                <h4>Марина, 42 года</h4>
+                                <div class="review-rating">
+                                    <span>★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Очень комфортно провели время с мужем в уютном домике в лесу. Все необходимое было в наличии, а медицинское сопровождение добавило чувства безопасности."</p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <span>👤</span>
+                            </div>
+                            <div class="review-author">
+                                <h4>Алексей, 38 лет</h4>
+                                <div class="review-rating">
+                                    <span>★★★★☆</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Отличный сервис! Заказали питание и курьерские услуги - все привозили точно в срок. Дом был чистый и уютный, отличное место для работы на удаленке."</p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <span>👤</span>
+                            </div>
+                            <div class="review-author">
+                                <h4>Ольга, 45 лет</h4>
+                                <div class="review-rating">
+                                    <span>★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Провели самоизоляцию с детьми в загородном доме. Дети могли гулять на свежем воздухе на территории кемпинга, а мы спокойно работали. Отличная идея и реализация!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promotions-section" id="promotions">
+        <div class="container">
+            <h2 class="section-title">Специальные акции</h2>
+            <p class="section-subtitle">Выгодные предложения для комфортной самоизоляции</p>
+            
+            <div class="promotions-container">
+                <div class="promotion-card">
+                    <div class="promotion-image">
+                        <img src="img/promo1.jpg" alt="Акция 1" width="400" height="200">
+                    </div>
+                    <div class="promotion-content">
+                        <h3 class="promotion-title">Скидка 15% на длительное проживание</h3>
+                        <p class="promotion-description">При бронировании от 14 дней - скидка 15% на весь период проживания. Идеально для длительной самоизоляции или работы на удаленке.</p>
+                        <a href="#" class="btn btn-outline">Подробнее об акции</a>
+                    </div>
+                </div>
+                
+                <div class="promotion-card">
+                    <div class="promotion-image">
+                        <img src="img/promo2.jpg" alt="Акция 2" width="400" height="200">
+                    </div>
+                    <div class="promotion-content">
+                        <h3 class="promotion-title">Бесплатное медицинское сопровождение</h3>
+                        <p class="promotion-description">При бронировании на 7 и более дней - бесплатное медицинское сопровождение на весь период проживания.</p>
+                        <a href="#" class="btn btn-outline">Подробнее об акции</a>
+                    </div>
+                </div>
+                
+                <div class="promotion-card">
+                    <div class="promotion-image">
+                        <img src="img/promo3.jpg" alt="Акция 3" width="400" height="200">
+                    </div>
+                    <div class="promotion-content">
+                        <h3 class="promotion-title">Семейный пакет</h3>
+                        <p class="promotion-description">Специальные условия для семей с детьми: скидка на дополнительных гостей, детское меню и развлекательные материалы.</p>
+                        <a href="#" class="btn btn-outline">Подробнее об акции</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe-section">
+        <div class="container">
+            <div class="subscribe-content">
+                <h2 class="subscribe-title">Подпишитесь на закрытые акции</h2>
+                <p class="subscribe-description">Получайте первыми информацию о специальных предложениях и скидках</p>
+                <form class="subscribe-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn-primary">Подписаться</button>
+                    </div>
+                    <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo2.png" alt="Логотип ОдинДома" width="40" height="40">
+                        <span>ОдинДома</span>
+                    </a>
+                    <p class="footer-slogan">Комфортно для Вас – безопасно для общества</p>
+                    <div class="footer-phone">
+                        <a href="tel:88001001010">8 (800) 100-10-10</a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#promotions">Акции</a></li>
+                        <li><a href="search.html">Поиск кемпингов</a></li>
+                        <li><a href="booking.html">Управление бронированием</a></li>
+                        <li><a href="#about">О компании</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3 class="footer-title">Услуги</h3>
+                    <ul>
+                        <li><a href="#">Проживание</a></li>
+                        <li><a href="#">Питание</a></li>
+                        <li><a href="#">Медицинское сопровождение</a></li>
+                        <li><a href="#">Курьерские услуги</a></li>
+                        <li><a href="#">Трансфер</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul>
+                        <li>Москва, ул. Примерная, 10</li>
+                        <li>info@odindoma.ru</li>
+                        <li>Пн-Пт: 9:00-21:00, Сб-Вс: 10:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ОдинДома. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование - ОдинДома</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="Логотип ОдинДома" width="40" height="40">
+                    <span>ОдинДома</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html#promotions">Акции</a></li>
+                    <li><a href="index.html#search-form">Поиск</a></li>
+                    <li><a href="booking.html">Управление бронированием</a></li>
+                </ul>
+                <div class="header-phone">
+                    <a href="tel:88001001010">8 (800) 100-10-10</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="booking-page">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Бронирование дома</h1>
+                <a href="seat.html" class="back-link">
+                    ← Вернуться к выбору дома
+                </a>
+            </div>
+            <div class="booking-content">
+                <div class="booking-form-container">
+                    <div class="booking-summary">
+                        <h2>Информация о заказе</h2>
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span class="summary-label">Регион:</span>
+                                <span class="summary-value">Московская область</span>
+                            </div>
+                            <div class="summary-row">
+                                <span class="summary-label">Кемпинг:</span>
+                                <span class="summary-value">"Лесная поляна", д. Бережки</span>
+                            </div>
+                            <div class="summary-row">
+                                <span class="summary-label">Дом:</span>
+                                <span class="summary-value">№1 (для 2-х человек)</span>
+                            </div>
+                            <div class="summary-row">
+                                <span class="summary-label">Даты проживания:</span>
+                                <span class="summary-value">15.10.2023 - 22.10.2023 (7 ночей)</span>
+                            </div>
+                            <div class="summary-row">
+                                <span class="summary-label">Стоимость проживания:</span>
+                                <span class="summary-value">17 500 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guests-section">
+                        <div class="section-header">
+                            <h2>Данные о постояльцах</h2>
+                        </div>
+                        
+                        <div class="guests-list">
+                            <div class="guest-form">
+                                <div class="guest-header">
+                                    <h3>Гость 1</h3>
+                                </div>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="lastName1">Фамилия *</label>
+                                        <input type="text" id="lastName1" name="lastName1" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="firstName1">Имя *</label>
+                                        <input type="text" id="firstName1" name="firstName1" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="middleName1">Отчество</label>
+                                        <input type="text" id="middleName1" name="middleName1">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="birthDate1">Дата рождения *</label>
+                                        <input type="date" id="birthDate1" name="birthDate1" required>
+                                    </div>
+                                    
+                                    <div class="form-group full-width">
+                                        <label for="document1">Серия и номер документа *</label>
+                                        <input type="text" id="document1" name="document1" placeholder="Например: 4510 123456" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guest-form">
+                                <div class="guest-header">
+                                    <h3>Гость 2</h3>
+                                </div>
+                                
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="lastName2">Фамилия *</label>
+                                        <input type="text" id="lastName2" name="lastName2" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="firstName2">Имя *</label>
+                                        <input type="text" id="firstName2" name="firstName2" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="middleName2">Отчество</label>
+                                        <input type="text" id="middleName2" name="middleName2">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="birthDate2">Дата рождения *</label>
+                                        <input type="date" id="birthDate2" name="birthDate2" required>
+                                    </div>
+                                    
+                                    <div class="form-group full-width">
+                                        <label for="document2">Серия и номер документа *</label>
+                                        <input type="text" id="document2" name="document2" placeholder="Например: 4510 123456" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-section">
+                        <h2>Дополнительные услуги</h2>
+                        <div class="services-list">
+                            <div class="service-option">
+                                <label class="service-checkbox">
+                                    <input type="checkbox" id="medicalService" name="services" value="medical">
+                                    <div class="checkbox-custom"></div>
+                                    <div class="service-content">
+                                        <div class="service-icon">
+                                            <span>🏥</span>
+                                        </div>
+                                        <div class="service-info">
+                                            <h4>Медицинское сопровождение</h4>
+                                            <p>Ежедневный осмотр врачом, консультации, контроль состояния здоровья</p>
+                                            <span class="service-price">+ 1 500 ₽ / сутки</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="service-option">
+                                <label class="service-checkbox">
+                                    <input type="checkbox" id="courierService" name="services" value="courier">
+                                    <div class="checkbox-custom"></div>
+                                    <div class="service-content">
+                                        <div class="service-icon">
+                                            <span>🚚</span>
+                                        </div>
+                                        <div class="service-info">
+                                            <h4>Курьерские услуги</h4>
+                                            <p>Доставка продуктов, лекарств и других необходимых вещей 2 раза в день</p>
+                                            <span class="service-price">+ 800 ₽ / сутки</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="service-option">
+                                <label class="service-checkbox">
+                                    <input type="checkbox" id="foodService" name="services" value="food">
+                                    <div class="checkbox-custom"></div>
+                                    <div class="service-content">
+                                        <div class="service-icon">
+                                            <span>🍽️</span>
+                                        </div>
+                                        <div class="service-info">
+                                            <h4>Питание</h4>
+                                            <p>Трехразовое питание с доставкой в дом. Меню на выбор: стандартное, вегетарианское, диетическое</p>
+                                            <span class="service-price">+ 2 000 ₽ / сутки с человека</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Итоговая стоимость</h3>
+                        
+                        <div class="price-details">
+                            <div class="price-row">
+                                <span>Проживание (7 ночей)</span>
+                                <span>17 500 ₽</span>
+                            </div>
+                            
+                            <div class="price-row">
+                                <span>Медицинское сопровождение</span>
+                                <span>0 ₽</span>
+                            </div>
+                            
+                            <div class="price-row">
+                                <span>Курьерские услуги</span>
+                                <span>0 ₽</span>
+                            </div>
+                            
+                            <div class="price-row">
+                                <span>Питание</span>
+                                <span>0 ₽</span>
+                            </div>
+                            
+                            <div class="price-row total">
+                                <span>Итого к оплате</span>
+                                <span>17 500 ₽</span>
+                            </div>
+                        </div>
+                        <div class="booking-actions">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                Подтвердить бронирование
+                            </button>
+                            
+                            <p class="booking-note">
+                                Нажимая кнопку, вы соглашаетесь с 
+                                <a href="#">условиями бронирования</a> и 
+                                <a href="#">политикой конфиденциальности</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3>Важная информация</h3>
+                        <ul class="info-list">
+                            <li><span>ℹ️</span> Бесплатная отмена за 48 часов до заселения</li>
+                            <li><span>ℹ️</span> Заселение после 14:00, выселение до 12:00</li>
+                            <li><span>ℹ️</span> На территории кемпинга запрещено курение</li>
+                            <li><span>ℹ️</span> Дома убираются ежедневно с 10:00 до 12:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo2.png" alt="Логотип ОдинДома" width="40" height="40">
+                        <span>ОдинДома</span>
+                    </a>
+                    <p class="footer-slogan">Комфортно для Вас – безопасно для общества</p>
+                    <div class="footer-phone">
+                        <a href="tel:88001001010">8 (800) 100-10-10</a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#promotions">Акции</a></li>
+                        <li><a href="search.html">Поиск кемпингов</a></li>
+                        <li><a href="booking.html">Управление бронированием</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul>
+                        <li>Москва, ул. Примерная, 10</li>
+                        <li>info@odindoma.ru</li>
+                        <li>Пн-Пт: 9:00-21:00, Сб-Вс: 10:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 ОдинДома. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор дома - ОдинДома</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="Логотип ОдинДома" width="40" height="40">
+                    <span>ОдинДома</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html#promotions">Акции</a></li>
+                    <li><a href="index.html#search-form">Поиск</a></li>
+                    <li><a href="booking.html">Управление бронированием</a></li>
+                </ul>
+                
+                <div class="header-phone">
+                    <a href="tel:88001001010">8 (800) 100-10-10</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="seat-selection">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Выбор дома в кемпинге "Лесная поляна"</h1>
+                <a href="search.html" class="back-link">
+                    ← Вернуться к результатам поиска
+                </a>
+            </div>
+            <div class="camp-summary">
+                <div class="summary-info">
+                    <h3>Информация о бронировании</h3>
+                    <div class="summary-details">
+                        <div class="summary-item">
+                            <span>📍</span>
+                            <span><strong>Регион:</strong> Московская область</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>🏠</span>
+                            <span><strong>Кемпинг:</strong> "Лесная поляна", д. Бережки</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>📅</span>
+                            <span><strong>Даты:</strong> 15.10.2023 - 22.10.2023 (7 ночей)</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>👤</span>
+                            <span><strong>Гости:</strong> 2 человека</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-price">
+                    <div class="price-info">
+                        <span class="price-label">Стоимость от:</span>
+                        <span class="price-value">2 500 ₽ / сутки</span>
+                    </div>
+                    <div class="total-price">
+                        <span class="total-label">Итого за 7 ночей:</span>
+                        <span class="total-value">17 500 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <div class="selection-content">
+                <div class="selection-instructions">
+                    <h2>Выберите свободный дом на схеме кемпинга</h2>
+                    <p>Нажмите на дом, чтобы выбрать его для бронирования. Зеленым цветом отмечены свободные дома, серым - занятые на выбранные даты.</p>
+                </div>
+                <div class="camp-map">
+                    <div class="map-container">
+                        <img src="img/map.jpg" alt="Схема кемпинга" class="map-image" width="2000" height="500">
+                        <div class="house-links">
+                            <a href="#house1" class="house-link" style="top: 20%; left: 15%;" data-house="1">Дом 1</a>
+                            <a href="#house2" class="house-link" style="top: 40%; left: 30%;" data-house="2">Дом 2</a>
+                            <a href="#house3" class="house-link booked" style="top: 60%; left: 20%;" data-house="3">Дом 3</a>
+                            <a href="#house4" class="house-link" style="top: 30%; left: 50%;" data-house="4">Дом 4</a>
+                            <a href="#house5" class="house-link booked" style="top: 70%; left: 60%;" data-house="5">Дом 5</a>
+                            <a href="#house6" class="house-link" style="top: 50%; left: 70%;" data-house="6">Дом 6</a>
+                        </div>
+                    </div>
+                    
+                    <div class="map-legend">
+                        <div class="legend-item">
+                            <div class="legend-color available"></div>
+                            <span>Свободный дом</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color booked"></div>
+                            <span>Занятый дом</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color selected"></div>
+                            <span>Выбранный дом</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="house-details">
+                    <h3>Информация о доме</h3>
+                    <p class="select-house-prompt">Выберите дом на схеме для просмотра деталей</p>
+                    <div class="house-info" id="house1">
+                        <div class="house-header">
+                            <h4>Дом 1</h4>
+                            <div class="house-status available">Свободен</div>
+                        </div>
+                        
+                        <div class="house-description">
+                            <p>Уютный дом для 2-х человек с отдельной террасой и видом на лес. Площадь 25 м².</p>
+                            
+                            <div class="house-features">
+                                <div class="feature">
+                                    <span>🛏️</span>
+                                    <span>1 двуспальная кровать</span>
+                                </div>
+                                <div class="feature">
+                                    <span>🚿</span>
+                                    <span>Собственная ванная комната</span>
+                                </div>
+                                <div class="feature">
+                                    <span>📶</span>
+                                    <span>Wi-Fi</span>
+                                </div>
+                                <div class="feature">
+                                    <span>❄️</span>
+                                    <span>Кондиционер</span>
+                                </div>
+                                <div class="feature">
+                                    <span>📺</span>
+                                    <span>Телевизор</span>
+                                </div>
+                                <div class="feature">
+                                    <span>🍳</span>
+                                    <span>Мини-кухня</span>
+                                </div>
+                            </div>
+                            
+                            <div class="house-price">
+                                <div class="price-details">
+                                    <div class="price-row">
+                                        <span>2 500 ₽ x 7 ночей</span>
+                                        <span>17 500 ₽</span>
+                                    </div>
+                                    <div class="price-row total">
+                                        <span>Итого к оплате</span>
+                                        <span>17 500 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="house-actions">
+                            <a href="booking.html" class="btn btn-primary">Забронировать этот дом</a>
+                        </div>
+                    </div>
+                    <div class="house-info" id="house2" style="display: none;">
+                        <div class="house-header">
+                            <h4>Дом 2</h4>
+                            <div class="house-status available">Свободен</div>
+                        </div>
+                        <div class="house-description">
+                            <p>Просторный дом с панорамными окнами и камином. Идеально для романтического отдыха.</p>
+                            <div class="house-features">
+                                <div class="feature">
+                                    <span>🛏️</span>
+                                    <span>1 двуспальная кровать</span>
+                                </div>
+                                <div class="feature">
+                                    <span>🛁</span>
+                                    <span>Собственная ванная с джакузи</span>
+                                </div>
+                                <div class="feature">
+                                    <span>📶</span>
+                                    <span>Wi-Fi</span>
+                                </div>
+                                <div class="feature">
+                                    <span>❄️</span>
+                                    <span>Кондиционер</span>
+                                </div>
+                                <div class="feature">
+                                    <span>📺</span>
+                                    <span>Телевизор</span>
+                                </div>
+                                <div class="feature">
+                                    <span>🍳</span>
+                                    <span>Мини-кухня</span>
+                                </div>
+                                <div class="feature">
+                                    <span>🔥</span>
+                                    <span>Камин</span>
+                                </div>
+                            </div>
+                            
+                            <div class="house-price">
+                                <div class="price-details">
+                                    <div class="price-row">
+                                        <span>2 800 ₽ x 7 ночей</span>
+                                        <span>19 600 ₽</span>
+                                    </div>
+                                    <div class="price-row total">
+                                        <span>Итого к оплате</span>
+                                        <span>19 600 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-actions">
+                            <a href="booking.html" class="btn btn-primary">Забронировать этот дом</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="selection-actions">
+                    <a href="booking.html" class="btn btn-primary btn-large">
+                        Перейти к бронированию
+                    </a>
+                    <p class="action-note">Рекомендуем сначала выбрать дом на схеме</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo2.png" alt="Логотип ОдинДома" width="40" height="40">
+                        <span>ОдинДома</span>
+                    </a>
+                    <p class="footer-slogan">Комфортно для Вас – безопасно для общества</p>
+                    <div class="footer-phone">
+                        <a href="tel:88001001010">8 (800) 100-10-10</a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#promotions">Акции</a></li>
+                        <li><a href="search.html">Поиск кемпингов</a></li>
+                        <li><a href="booking.html">Управление бронированием</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Контакты</h3>
+                    <ul>
+                        <li>Москва, ул. Примерная, 10</li>
+                        <li>info@odindoma.ru</li>
+                        <li>Пн-Пт: 9:00-21:00, Сб-Вс: 10:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 ОдинДома. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
